@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import ChatHeader from '../components/chatHeader.jsx';
+import ChatHeader from '../components/chatHeader';
 import { CONFIG } from '../config';
 
 const NoBranch = ({ userName, randomizerMode }) => {
