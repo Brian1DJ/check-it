@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import ChatHeader from '../components/chatHeader.jsx';
+import ChatHeader from '../components/chatHeader';
 import EasterEgg from '../components/EasterEgg';
 import { CONFIG } from '../config';
 
-const Intro = ({ setUserName, randomizerMode, setRandomizerMode, setVibeMode }) => {
+const Intro = ({ setUserName, randomizerMode, setRandomizerMode, vibeMode, setVibeMode }) => {
   const [nameInput, setNameInput] = useState('');
   const navigate = useNavigate();
 
@@ -78,16 +78,28 @@ const Intro = ({ setUserName, randomizerMode, setRandomizerMode, setVibeMode }) 
         </div>
 
         <div className="vibe-selector">
-          <div className="vibe-option active" onClick={() => setVibeMode('sweet')}>
+          <div 
+            className={`vibe-option ${vibeMode === 'sweet' ? 'active' : ''}`} 
+            onClick={() => setVibeMode('sweet')}
+          >
             🍯 Sweet
           </div>
-          <div className="vibe-option" onClick={() => setVibeMode('funny')}>
+          <div 
+            className={`vibe-option ${vibeMode === 'funny' ? 'active' : ''}`} 
+            onClick={() => setVibeMode('funny')}
+          >
             😄 Playful
           </div>
-          <div className="vibe-option" onClick={() => setVibeMode('confident')}>
+          <div 
+            className={`vibe-option ${vibeMode === 'confident' ? 'active' : ''}`} 
+            onClick={() => setVibeMode('confident')}
+          >
             ✨ Confident
           </div>
-          <div className="vibe-option" onClick={() => setVibeMode('shy')}>
+          <div 
+            className={`vibe-option ${vibeMode === 'shy' ? 'active' : ''}`} 
+            onClick={() => setVibeMode('shy')}
+          >
             🌸 Soft
           </div>
         </div>
