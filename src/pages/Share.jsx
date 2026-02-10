@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import ChatHeader from '../components/chatHeader';
+import ChatHeader from '../components/ChatHeader.jsx';
 import { CONFIG } from '../config';
 
 const Share = ({ userName, selectedActivity, selectedTime }) => {

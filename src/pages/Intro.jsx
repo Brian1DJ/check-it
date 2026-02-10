@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import ChatHeader from '../components/chatHeader';
+import ChatHeader from '../components/ChatHeader';
 import EasterEgg from '../components/EasterEgg';
 import { CONFIG } from '../config';
 

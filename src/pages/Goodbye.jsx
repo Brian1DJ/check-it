@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import ChatHeader from '../components/chatHeader';
+import ChatHeader from '../components/ChatHeader';
 
 const Goodbye = () => {
   const navigate = useNavigate();
